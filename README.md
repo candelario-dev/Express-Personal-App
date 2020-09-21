@@ -1,8 +1,8 @@
-#Express Period Tracker
+# Express Period Tracker
 
 ![periodtracker](https://user-images.githubusercontent.com/69063941/93759026-75bbbe00-fbd7-11ea-83c5-0b19df7c762c.png)
 
-###How it's made:
+### How it's made:
 HTML, CSS, Bootstrap, JavaScript, Node.js, MongoDb
 
 ## Installation
