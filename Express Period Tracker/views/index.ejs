@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Period Tracker</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/9519e19407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+  <h1>Period Tracker</h1>
+  <h2>Do you have a uterus? Yeah, it sucks. Def should keep track of your period.</h2>
+  <form action="/messages" method="POST">
+    <input type="date" name="date" placeholder="date">
+    <input type="text" placeholder="Symptoms" name="symptoms">
+    <button type="submit">Submit</button>
+  </form>
+  <h3>Tracker</h3>
+    <table class="messages">
+      <tr>
+        <td>Date:</td>
+        <td>Symptoms:</td>
+        <td>Flow:</td>
+      </tr>
+      <% for(var i=0; i<messages.length; i++) {%>
+        <tr>
+          <td><span><%= messages[i].date %></span></td>
+          <td><span><%= messages[i].symptoms %></span></td>
+          <td><span><%= messages[i].thumbUp %></span>
+            <span><i class="fas fa-tint"></i></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span></td>
+          
+        </tr>
+        <% } %>
+    </table>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
